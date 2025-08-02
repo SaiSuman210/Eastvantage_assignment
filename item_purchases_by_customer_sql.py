@@ -30,7 +30,7 @@ try:
   columns = [description[0] for description in cursor.description]
   output_csv = 'ITEM_PURCAHSES_BY_CUSTOMER-SQL.csv'
 
-  with open(output_csv, mode='w', newline='', encoding='utf-8') as f:
+  with open(f"output/{output_csv}", mode='w', newline='', encoding='utf-8') as f:
     writer = csv.writer(f, delimiter=';')
     writer.writerow(columns)
     writer.writerows(rows)

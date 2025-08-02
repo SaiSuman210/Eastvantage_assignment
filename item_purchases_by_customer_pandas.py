@@ -38,7 +38,7 @@ try:
 
   output_csv = "ITEM_PURCAHSES_BY_CUSTOMER-PANDAS.csv"
 
-  result.to_csv(output_csv, sep=';', index=False)
+  result.to_csv(f"output/{output_csv}", sep=';', index=False)
   print(f"Query results saved to '{output_csv}'")
 
 except Exception as e:
