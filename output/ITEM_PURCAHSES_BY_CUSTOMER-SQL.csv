@@ -1,4 +1,4 @@
-customer_id;item_name;TOTAL
+customer_id;item_name;quantity
 5;x;3
 5;y;3
 5;z;4
